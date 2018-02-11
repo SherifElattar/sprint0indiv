@@ -1,0 +1,22 @@
+git init
+git add file1.txt
+git add file2.txt
+git add file3.txt
+git commit -m "First commit with all 3 files"
+git log
+git rm file3.txt
+git commit -m "Second commit after removing the 3rd file"
+git checkout 696d02bec15cf892750ad7c740f98eb599c9fe4b -- file3.txt
+git commit -m "Third commit after gettin 3rd file back"
+git remote add origin https://github.com/SherifElattar/sprint0indiv.git
+git push origin master
+type nul> README.md
+git checkout -b ReadMe
+git add README.md
+git commit -m "Commit with the README.md"
+git push origin ReadMe
+git checkout master
+git merge ReadMe
+git add allmycommands.txt
+git commit -m "Fifth commit adding the allmycommands.txt file"
+git push origin master
