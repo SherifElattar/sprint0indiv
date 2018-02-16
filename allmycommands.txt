@@ -20,3 +20,5 @@ git merge ReadMe
 git add allmycommands.txt
 git commit -m "Fifth commit adding the allmycommands.txt file"
 git push origin master
+--manually deleting file3
+git checkout file3.txt
